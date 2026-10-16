@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sandeep Charan Vipparla | DevOps Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f4f6fc;--card:#fff;--text:#121a33;--muted:#58627f;--line:#e0e5f2;--blue:#2f6bff;--teal:#0fb89d;--violet:#7c4dff;--amber:#f59e0b;--coral:#f0506e;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1022;--card:#141b34;--text:#e9edfa;--muted:#9aa5c6;--line:#232c4d;--teal:#2fd6bb;--blue:#6b95ff;--violet:#a084ff;--amber:#fbbf4a;--coral:#ff7b93}}
+:root[data-theme="dark"]{--bg:#0b1022;--card:#141b34;--text:#e9edfa;--muted:#9aa5c6;--line:#232c4d;--teal:#2fd6bb;--blue:#6b95ff;--violet:#a084ff;--amber:#fbbf4a;--coral:#ff7b93}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 "Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:Sora,"Plus Jakarta Sans",system-ui,sans-serif;line-height:1.2;margin:0}
+a{color:inherit}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+/* hero */
+.hero{background:radial-gradient(900px 400px at 85% -10%,rgba(124,77,255,.55),transparent 60%),radial-gradient(700px 400px at 0% 110%,rgba(15,184,157,.45),transparent 60%),linear-gradient(135deg,#0a1230,#132a6b);color:#fff;padding:72px 0 120px}
+.hero h1{font-size:clamp(2.2rem,6.5vw,3.8rem);font-weight:800;letter-spacing:-.03em;background:linear-gradient(90deg,#fff,#b9ccff 55%,#7ff0dc);-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{margin:14px 0 0;font-size:1.1rem;color:#cfd9ff;font-weight:500}
+.lead{max-width:600px;color:#b8c4ee;margin:18px 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{padding:10px 18px;border-radius:10px;text-decoration:none;font-weight:600;font-size:.93rem;border:1px solid rgba(255,255,255,.28);color:#fff;background:rgba(255,255,255,.08)}
+.btn.p{background:linear-gradient(90deg,#2f6bff,#7c4dff);border-color:transparent}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-top:-64px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;border-top:4px solid var(--c)}
+.stat b{display:block;font:800 1.9rem Sora,sans-serif;color:var(--c)}
+.stat span{color:var(--muted);font-size:.88rem}
+section{padding:44px 0 8px}
+h2{font-size:1.5rem;margin-bottom:6px}
+.kick{color:var(--muted);margin:0 0 22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+/* pipeline */
+.flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:10px;margin-bottom:22px}
+.node{flex:1 1 130px;border-radius:12px;padding:12px 14px;color:#fff;font-weight:600;font-size:.9rem;position:relative}
+.node small{display:block;font-weight:500;opacity:.88;font-size:.76rem}
+.n1{background:linear-gradient(135deg,#475569,#334155)}.n2{background:linear-gradient(135deg,#f0506e,#d93a5a)}.n3{background:linear-gradient(135deg,#0fb89d,#0a8f7a)}.n4{background:linear-gradient(135deg,#2f6bff,#1d4ed8)}.n5{background:linear-gradient(135deg,#f59e0b,#d97706)}
+.node:not(:last-child)::after{content:"\203A";position:absolute;right:-10px;top:50%;transform:translateY(-50%);color:var(--muted);font-weight:800;z-index:1}
+.two{display:grid;grid-template-columns:1.3fr 1fr;gap:20px}
+@media(max-width:760px){.two{grid-template-columns:1fr}.node:not(:last-child)::after{display:none}}
+ul{margin:0;padding-left:20px}li{margin:8px 0}li::marker{color:var(--teal)}
+.fix{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.pill{font-size:.8rem;font-weight:600;padding:4px 12px;border-radius:999px;background:color-mix(in srgb,var(--c) 14%,transparent);color:var(--c);border:1px solid color-mix(in srgb,var(--c) 35%,transparent)}
+.cve{display:flex;align-items:center;gap:14px;margin:6px 0 14px}
+.cve div{flex:1;text-align:center;padding:14px;border-radius:12px;font:800 1.7rem Sora,sans-serif}
+.cve .a{background:color-mix(in srgb,var(--coral) 14%,transparent);color:var(--coral)}
+.cve .b{background:color-mix(in srgb,var(--teal) 16%,transparent);color:var(--teal)}
+.cve span{display:block;font:500 .75rem "Plus Jakarta Sans",sans-serif;color:var(--muted)}
+/* repos */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+.repo{border-left:5px solid var(--c);text-decoration:none;display:block}
+.repo:hover{border-color:var(--c);box-shadow:0 8px 24px -12px var(--c)}
+.repo h3{font-size:1rem;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.repo p{color:var(--muted);font-size:.92rem;margin:8px 0 12px}
+.tag{font:600 .7rem "Plus Jakarta Sans",sans-serif;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:1px 8px}
+.own{font:700 .7rem "Plus Jakarta Sans",sans-serif;color:#fff;background:var(--c);border-radius:6px;padding:2px 8px}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c);margin-right:6px}
+.lang{font-size:.82rem;color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.skills .card{border-top:4px solid var(--c)}
+.skills h3{font-size:1rem;margin-bottom:12px;color:var(--c)}
+.note{color:var(--muted);font-size:.85rem;margin-top:14px}
+.tl{border-left:3px solid var(--line);margin-left:6px;padding-left:22px}
+.tl>div{position:relative;margin-bottom:20px}
+.tl>div::before{content:"";position:absolute;left:-30px;top:6px;width:13px;height:13px;border-radius:50%;background:var(--c);box-shadow:0 0 0 4px var(--bg)}
+.tl b{display:block}.tl span{color:var(--muted);font-size:.9rem}
+.cta{margin:48px 0 0;padding:40px 0 56px;background:linear-gradient(135deg,#0a1230,#1b2f78);color:#fff;text-align:center}
+.cta p{color:#b8c4ee;margin:10px 0 22px}
+.cta h2{font-size:1.7rem}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <h1>Sandeep Charan Vipparla</h1>
+  <p class="role">DevOps Engineer &middot; Site Reliability &middot; Platform Engineering</p>
+  <p class="lead">I build and run Kubernetes platforms end to end: infrastructure with Terraform, delivery through Jenkins and Argo CD, and monitoring with Prometheus and Grafana. Based in Hyderabad, India.</p>
+  <div class="btns">
+    <a class="btn p" href="mailto:sandeepcharanvipparla@gmail.com">Email me</a>
+    <a class="btn" href="https://github.com/sandeepcharan-devops">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/sandeep-charan-vipparlapparla/">LinkedIn</a>
+    <a class="btn" href="tel:+919493858317">+91 94938 58317</a>
+  </div>
+</div></header>
+
+<main class="wrap">
+  <div class="stats">
+    <div class="stat" style="--c:var(--coral)"><b>13 to 0</b><span>critical CVEs removed</span></div>
+    <div class="stat" style="--c:var(--blue)"><b>7</b><span>stage Jenkins CI pipeline</span></div>
+    <div class="stat" style="--c:var(--teal)"><b>3</b><span>repos: app, GitOps, IaC</span></div>
+    <div class="stat" style="--c:var(--amber)"><b>2.5 yrs</b><span>at Infosys</span></div>
+  </div>
+
+  <section>
+    <h2>Sock Shop: production-grade microservices platform</h2>
+    <p class="kick">A self-built deployment of a full DevOps toolchain on AWS.</p>
+    <div class="flow" role="img" aria-label="Delivery flow: Git, Jenkins, Argo CD, Kubernetes, Prometheus and Grafana">
+      <div class="node n1">Git<small>app + GitOps repos</small></div>
+      <div class="node n2">Jenkins CI<small>7 stages</small></div>
+      <div class="node n3">Argo CD<small>GitOps delivery</small></div>
+      <div class="node n4">Kubernetes<small>kubeadm, 2 nodes, AWS EC2</small></div>
+      <div class="node n5">Prometheus + Grafana<small>observability</small></div>
+    </div>
+    <div class="two">
+      <div class="card">
+        <ul>
+          <li>Provisioned a two-node kubeadm cluster on AWS EC2 (ap-south-1) with Terraform, using S3 and DynamoDB for remote state locking.</li>
+          <li>Built a 7-stage Jenkins CI pipeline feeding Argo CD for GitOps-based continuous delivery.</li>
+          <li>Set up Prometheus and Grafana through kube-prometheus-stack.</li>
+          <li>Upgraded the app from Node 10 (EOL) to Node 22 LTS with targeted yarn resolutions.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <b>Critical CVEs, before and after</b>
+        <div class="cve"><div class="a">13<span>before</span></div><div class="b">0<span>after</span></div></div>
+        <b>Break/fix scenarios I practiced and documented</b>
+        <div class="fix">
+          <span class="pill" style="--c:var(--coral)">CrashLoopBackOff</span>
+          <span class="pill" style="--c:var(--amber)">OOMKilled (137)</span>
+          <span class="pill" style="--c:var(--violet)">HPA misconfiguration</span>
+          <span class="pill" style="--c:var(--teal)">Argo CD drift</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>GitHub repositories</h2>
+    <p class="kick">Pulled from github.com/sandeepcharan-devops. Forks are labelled.</p>
+    <div class="grid">
+      <a class="card repo" style="--c:var(--violet)" href="https://github.com/sandeepcharan-devops/terraform-sockshop"><h3>terraform-sockshop <span class="own">my work</span></h3><p>Infrastructure as code for the Sock Shop cluster.</p><span class="lang"><i class="dot"></i>HCL</span></a>
+      <a class="card repo" style="--c:var(--teal)" href="https://github.com/sandeepcharan-devops/sockshop-gitops"><h3>sockshop-gitops <span class="own">my work</span></h3><p>GitOps configuration repository for Argo CD delivery.</p><span class="lang"><i class="dot"></i>Config</span></a>
+      <a class="card repo" style="--c:var(--blue)" href="https://github.com/sandeepcharan-devops/microservices-demo"><h3>microservices-demo <span class="tag">fork</span></h3><p>Sock Shop deployment scripts and config.</p><span class="lang"><i class="dot"></i>Python</span></a>
+      <a class="card repo" style="--c:var(--amber)" href="https://github.com/sandeepcharan-devops/front-end"><h3>front-end <span class="tag">fork</span></h3><p>Sock Shop front-end application, upgraded to Node 22 LTS.</p><span class="lang"><i class="dot"></i>HTML</span></a>
+      <a class="card repo" style="--c:var(--coral)" href="https://github.com/sandeepcharan-devops/BookMyShow-devops"><h3>BookMyShow-devops <span class="own">my work</span></h3><p>DevOps work on the BookMyShow app.</p><span class="lang"><i class="dot"></i>See repo</span></a>
+      <a class="card repo" style="--c:var(--blue)" href="https://github.com/sandeepcharan-devops/BookMyShow-clone"><h3>BookMyShow-clone <span class="tag">fork</span></h3><p>React movie ticket booking app.</p><span class="lang"><i class="dot"></i>JavaScript</span></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <p class="kick">The toolchain I use in Sock Shop.</p>
+    <div class="skills">
+      <div class="card" style="--c:var(--blue)"><h3>Containers and orchestration</h3><div class="fix"><span class="pill" style="--c:var(--blue)">Kubernetes (kubeadm)</span><span class="pill" style="--c:var(--blue)">Docker</span><span class="pill" style="--c:var(--blue)">Helm</span></div></div>
+      <div class="card" style="--c:var(--coral)"><h3>CI/CD and GitOps</h3><div class="fix"><span class="pill" style="--c:var(--coral)">Jenkins</span><span class="pill" style="--c:var(--coral)">Argo CD</span></div></div>
+      <div class="card" style="--c:var(--violet)"><h3>Infrastructure as code</h3><div class="fix"><span class="pill" style="--c:var(--violet)">Terraform</span><span class="pill" style="--c:var(--violet)">S3 + DynamoDB state</span></div></div>
+      <div class="card" style="--c:var(--amber)"><h3>Cloud (AWS)</h3><div class="fix"><span class="pill" style="--c:var(--amber)">EC2</span><span class="pill" style="--c:var(--amber)">IAM/STS</span><span class="pill" style="--c:var(--amber)">ASG</span><span class="pill" style="--c:var(--amber)">VPC</span></div></div>
+      <div class="card" style="--c:var(--teal)"><h3>Observability</h3><div class="fix"><span class="pill" style="--c:var(--teal)">Prometheus</span><span class="pill" style="--c:var(--teal)">Grafana</span></div></div>
+      <div class="card" style="--c:var(--coral)"><h3>Security</h3><div class="fix"><span class="pill" style="--c:var(--coral)">Trivy</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience and education</h2>
+    <p class="kick">&nbsp;</p>
+    <div class="tl">
+      <div style="--c:var(--blue)"><b>Infosys</b><span>May 2022 to September 2024</span></div>
+      <div style="--c:var(--teal)"><b>Cloud Engineering Intern, CloudSync Innovations</b></div>
+      <div style="--c:var(--violet)"><b>MCA, Vignan Degree &amp; PG College, Guntur</b></div>
+      <div style="--c:var(--amber)"><b>In progress: Certified Kubernetes Administrator (CKA)</b></div>
+      <div style="--c:var(--coral)"><b>In progress: AWS Certified DevOps Engineer &ndash; Professional</b></div>
+    </div>
+  </section>
+</main>
+
+<div class="cta"><div class="wrap">
+  <h2>Hiring for DevOps, SRE or Platform roles?</h2>
+  <p>I'm open to opportunities. Let's talk.</p>
+  <div class="btns" style="justify-content:center"><a class="btn p" href="mailto:sandeepcharanvipparla@gmail.com">sandeepcharanvipparla@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/sandeep-charan-vipparlapparla/">LinkedIn</a></div>
+</div></div>
+</body>
+</html>
